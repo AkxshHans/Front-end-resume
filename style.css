@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+html , body {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    position: fixed;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1vw 6vw;
+    justify-content: space-between;
+    
+}
+
+
+.navpart2 h5  {
+   color: white;
+   font-size: 3vh;
+   position: absolute;
+   left: 71%;
+   top: 30%;
+   /* font-family: "Sacramento", cursive; */
+
+}
+
+
+.bottom-div h5 span {
+    font-size: 0.8vw;
+    font-weight: 500;
+    display: inline-block;
+    /* opacity: 0; */
+    
+ 
+}
+.bottm-div {
+    margin-top: 2vw;
+}
+.bottom-div h5  {
+    /* background-color: red; */
+    margin-bottom: 0.1vw;
+    /* background-color: red; */
+    overflow: hidden;
+  
+    
+}
+#nav-bottom {
+    width: 70%;
+    height: 0vh;
+
+    position: absolute;
+    /* background-color: red; */
+    top: 100%;
+    z-index: 9;
+    /* border-bottom: 1px solid #fff; */
+    background-color: #111;
+    
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#page1 h1 {
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 6vw;
+}
+#page1 h1 svg {
+    height: 4vw;
+    width: 4vw;
+    background-color: #008000;
+    border-radius: 50%;
+}
+#page1 p {
+    text-align: center;
+    font-weight: 400;
+}
+
+.move {
+    display: flex;
+}
+.move #img1 {
+    width: 40px;
+    position: absolute;
+    bottom: 10%;
+    left: 39%;
+    border-radius: 20px;
+
+}
+.move #img2 {
+    width: 40px;
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    border-radius: 20px;
+
+}
+.move #img3 {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 10%;
+    left: 51%;
+    border-radius: 20px;
+    border: 2px solid white;
+
+}
+.move #img4 {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 20px;
+    bottom: 10%;
+    left: 58%;
+    border: 2px solid white;
+
+}
+
+@keyframes mobe {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-100%);
+    }
+}
+#moving-div .move {
+    animation-name: mobe;
+    animation-duration: 4sec;
+}
+#techstack h6 {
+    color: white;
+    position: absolute;
+    top: 76%;
+    left: 47%;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    padding: 0.vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+}
+#page2-left{
+    height: 100%;
+    width: 45%;
+    /* background-color: #333; */
+}
+
+#imagea img {
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    opacity: 0.7;
+    border: 4px solid white;
+   
+}
+#imagea img:hover {
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    opacity: 1;
+    border: 4px solid rgb(241, 50, 50);
+   
+}
+#aboutme h5 {
+    color: rgb(19, 176, 238);
+    position: absolute;
+    bottom: 22%;
+    left: 20%;
+}
+#aboutme h4 {
+    color: rgb(253, 255, 255);
+    position: absolute;
+    bottom: 18%;
+    left: 15%;
+    font-weight: 600;
+}
+#aboutme p{
+    color: rgb(219, 229, 231);
+    position: absolute;
+    bottom: 2%;
+    left: 11%;
+    font-size: 15px;
+}
+#page2-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: #333; */
+}
+
+#right-elem  img {
+    height: 6vw;
+    width: 6vw;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    scale: 0;
+}
+#right-elem {
+    position: relative;
+    /* background-color: red; */
+    padding-top: 3vw;
+    padding-bottom: 6.8vw;
+    border-bottom: 1px solid #333;
+}
+#right-elem {
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+#right-elem a{
+   text-decoration: none;
+}
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    background-image: url(backimgakash.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3-center {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw;
+}
+.page3-center h5 {
+    font-size: 1vw;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-top: 1.5vw;
+    font-weight: 700;
+    opacity: 0;
+    transition: all ease 0.5s;
+   
+}
+.page3-center .icon {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.3vw;
+    border-radius: 50%;
+    background-color: #fff;
+   
+   
+    
+}
+.page3-center .icon i{
+    color: black;
+    font-size: 2.7vw;
+}
+.page3-center:hover  h5{
+    opacity: 1;
+}
+#page3  video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: scaleX(0.7) scaleY(0);
+    border-radius: 30px;
+    opacity: 0;
+    z-index: 99999;
+}
+#page4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #111;
+}
+#page4left {
+    width: 50%;
+    height: 100vh;
+    /* background-color: rgb(145, 105, 105);  */
+    
+}
+#page4right {
+    width: 50%;
+    height: 100vh;
+    /* background-color: rgb(19, 17, 17); */
+    /* background-color: ; */
+    
+}
+#page4left h5 {
+    position: absolute;
+    /* color: rgb(30, 180, 240); */
+    position: absolute;
+    left: 47%;
+    bottom: -212%;
+    font-weight: 800;
+    color: red;
+
+}
+#page4left h6 {
+    position: absolute;
+    left: 40%;
+    bottom: -216%;
+    font-size: 1vw;
+    font-weight: 900;
+      color: skyblue;
+}
+#page4left h3 {
+    position: absolute;
+    left: 17%;
+    bottom:  -230%;
+    font-size: 24px;
+    color: white;
+}
+#page4left h3:hover {
+    position: absolute;
+    left: 17%;
+    bottom:  -230%;
+    font-size: 24px;
+    color: rgb(115, 66, 180);
+}
+#page4left p{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    left: 14%;
+    bottom: -246%;
+}
+#page4left button {
+    background-color: skyblue;
+    color: black;
+    position: absolute;
+    left: 20%;
+    bottom: -270%;
+    padding: 2vw 4vw;
+    border-radius: 50px;
+}
+#page4left button:hover {
+    background-color: rgb(8, 175, 241);
+    color: black;
+    position: absolute;
+    left: 20%;
+    bottom: -270%;
+    padding: 2vw 4vw;
+    border-radius: 50px;
+}
+#page4right img {
+    width: 500px;
+   position: absolute;
+    object-fit: cover;
+    right: 9%;
+    bottom: -270%;
+    border-radius: 12px;
+    
+}
+#page4right h5 {
+     position: absolute;
+     bottom: -286%;
+     right: 23%;
+     font-size: 22px;
+}
+
+#page5 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #111;
+}
+#page5left {
+    width: 50%;
+    height: 100vh;
+    /* background-color: rgb(145, 105, 105);  */
+    
+}
+#page5left {
+    width: 50%;
+    height: 100vh;
+    /* background-color: rgb(19, 17, 17); */
+    /* background-color: ; */
+    
+}
+#page5right h5 {
+    position: absolute;
+    /* color: rgb(30, 180, 240); */
+    position: absolute;
+  
+    font-weight: 800;
+    color: red;
+
+}
+#page5right h6 {
+    position: absolute;
+  
+    font-size: 1vw;
+    font-weight: 900;
+      color: skyblue;
+}
+#page5right h3 {
+    position: absolute;
+    right: 21%;
+    bottom:  -325%;
+    font-size: 24px;
+    color: white;
+}
+#page5right h3:hover {
+    position: absolute;
+   
+    font-size: 24px;
+    color: rgb(115, 66, 180);
+}
+#page5right p{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    bottom: -340%;
+    right: 12%;
+   
+}
+
+
+#page5left img {
+    width: 500px;
+   position: absolute;
+    object-fit: cover;
+ left: 6%;
+ bottom: -360%;
+    
+    border-radius: 12px;
+    
+}
+#page5left h5 {
+     position: absolute;
+     bottom: -375%;
+     left: 20% ;
+     font-size: 22px;
+}
+#btn button {
+    background-color: rgb(10, 105, 248);
+    position: absolute;
+    right: 22%;
+    bottom: -360%;
+    padding: 2vw 4vw;
+    border-radius: 50px;
+    color: black;
+
+}
+#btn button:hover {
+    background-color: rgb(69, 114, 197);
+    position: absolute;
+    right: 22%;
+    bottom: -360%;
+    padding: 2vw 4vw;
+    border-radius: 50px;
+    color: black;
+
+}
+
